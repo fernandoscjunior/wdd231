@@ -12,4 +12,12 @@
         display: none;
     }
 
+    /* Making nav bar default on large screen*/
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+    }
 }
