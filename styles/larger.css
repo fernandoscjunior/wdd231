@@ -1,0 +1,15 @@
+@media only screen and (min-width: 38rem) {
+    /*adjusting header body and footer to big-size screen*/
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 24px auto;
+    }
+    /*making hamburger small-display only*/
+    .hamburger {
+        display: none;
+    }
+
+}
