@@ -20,4 +20,12 @@
     .navigation a {
         border: none;
     }
+
+    /*Making main section grid when big screen*/
+    main .sections{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 5px;
+    }
+
 }
