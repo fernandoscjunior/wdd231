@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
     <header>
@@ -53,14 +54,13 @@
                 <h2>Web Certificate Courses</h1>
             </div>
             <div class="courses">
-                <h2>All</h2>
-                <h2>CSE</h2>
-                <h2>WDD</h2>
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
             </div>
-            <div class="sub-courses">
-                <h3>WDD 130</h3>
-                <h3>WDD 131</h3>
-                <h3>WDD 231</h3>
+                <p id="credits">Course credits:</p>
+
+            <div id="card-container" class="container">
             </div>
         </section>
 
@@ -73,8 +73,7 @@
             <a href="" target="_blank"><img src="images/youtube.svg" alt="youtube logo" width="16" height="16"></a>
             <a href="" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp logo" width="16" height="16"></a>
         </div>
-        <p>©️ <span id="currentyear"></span></p>
-        <p>Fernando S. Costa Jr - Brazil</p>
+        <p>©️ <span id="currentyear"></span> Fernando S. Costa Jr - Brazil</p> 
         <p id="lastmodified"><span id="lastModified"></span></p>
     </footer>
 </body>

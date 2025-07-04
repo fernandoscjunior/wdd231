@@ -147,27 +147,40 @@ main .web-card h2 {
     font-size: 22px;
 }
 
-main .web-card .courses, .sub-courses {
+main .web-card .courses{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-
 }
 
-main .web-card .courses h2 {
+main .web-card .courses button {
     color: var(--text-color);
     background-color: var(--border-color);
+    border: none;
     border-radius: 10px;
     margin: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 
-main .web-card .sub-courses h3{
+main .web-card .courses button:hover{
+    background-color: var(--secondary-color);
+}
+
+main .web-card .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+main .web-card div .card{
     color: var(--text-color);
     background-color: var(--border-color);
     border: solid 1px var(--secondary-color);
     border-radius: 10px;
 }
+
+
 
 /* Footer */
 
