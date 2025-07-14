@@ -1,0 +1,73 @@
+@media only screen and (min-width: 49rem) {
+    /*adjusting header body and footer to big-size screen*/
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+    /*adjusting header items for large viewers*/
+    header {
+        grid-template-columns: 100px 1fr;
+        text-align: start;
+    }
+
+    /*Adjusting card's grid to 3 columns*/
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px;
+        margin: 0px;
+    
+    }
+    /*Adjusting list view to large screens*/
+
+    .list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .list section {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		margin: 0;
+		padding: 10px;
+        border-radius: 0%;
+        border: none;
+        text-align: left;
+        
+
+		&:nth-child(even) {
+			background-color: var(--secondary-color);
+		}
+
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        &:last-child {
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+	}
+
+
+    /*making hamburger small-display only*/
+    .hamburger {
+        display: none;
+    }
+
+    /* Making nav bar default on large screen*/
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /*Making main section grid when big screen*/
+    main .sections{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 5px;
+    }
+
+}
