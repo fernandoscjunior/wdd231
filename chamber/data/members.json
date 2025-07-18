@@ -1,6 +1,7 @@
 {
     "companies" : [
         {
+            "ID" : 0,
             "name" : "Mercado municipal",
             "adress" : "Rua Figueiredo Magalhães 230",
             "phoneNumber" : "(48) 3345-6657",
@@ -9,6 +10,7 @@
             "membership" : 1
         },
         {
+            "ID" : 1,
            "name" : "Bistek",
             "adress" : "Rua Francisco Rodrigues 110",
             "phoneNumber" : "(48) 3255-7757",
@@ -17,6 +19,7 @@
             "membership" : 2
         },
         {
+            "ID" : 2,
             "name" : "Peixaria Coimbra",
             "adress" : "Rua Leonato da Costa 730",
             "phoneNumber" : "(48) 3266-4588",
@@ -25,6 +28,7 @@
             "membership" : 2
         },
         {
+            "ID" : 3,
             "name" : "Angeloni",
             "adress" : "Avenida Brigadeiro Silva Paes 220",
             "phoneNumber" : "(48) 3367-9980",
@@ -33,6 +37,7 @@
             "membership" : 3
         },
         {
+            "ID" : 4,
             "name" : "Giassi",
             "adress" : "Rua Jair Vieira 110",
             "phoneNumber" : "(48) 3301-3324",
@@ -41,6 +46,7 @@
             "membership" : 2
         },
         {
+            "ID" : 5,
             "name" : "Cacau Show",
             "adress" : "Rua José Neto 450",
             "phoneNumber" : "(48) 3356-0057",
@@ -49,6 +55,7 @@
             "membership" : 2
         },
         {
+            "ID" : 6,
             "name" : "Juca pato",
             "adress" : "Avenida Crescencio Enéas 190",
             "phoneNumber" : "(48) 3213-4659",

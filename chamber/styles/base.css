@@ -3,7 +3,7 @@
     --secondary-color: #caf9dd;
     --background-color: #015558;
     --text-color: #aee2c3;
-    --color: #d76459;
+    --color: #f17469;
     --font-title: "Montserrat", sans-serif;
     --font-text: "DM Sans", sans-serif;
 }
@@ -102,6 +102,7 @@ main {
 main h1 {
     color: var(--background-color);
     font-family: var(--font-title);
+    padding-top: 10px;
 }
 
 main p {
@@ -123,6 +124,32 @@ main button {
 main button:hover {
     background-color: var(--text-color);
     color: var(--background-color);
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+main section div {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+main section h1 {
+    font-family: var(--font-title);
+    padding: 10px;
+}
+
+main section h3 {
+    font-family: var(--font-title);
+    color: var(--color);
+    padding-left: 10px;
+
 }
 
 main .call-action {
@@ -148,22 +175,50 @@ main .hero-img img {
     height: auto;
 }
 
-main .events {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    text-align: center;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
+main .events img {
+    width: 225px;
+    height: auto;
     padding: 10px;
-    margin: 5px;
+    border-radius: 20px;
+}
+
+main .events p {
+    color: var(--color);
+    font-family: var(--font-text);
+    font-size: medium;
+    padding: 5px;
+}
+
+main .weather span {
+    color: var(--color);
+    font-family: var(--font-text);
+    font-size: large;
+}
+
+main .weather .forecast {
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
-main .events img {
-    width: 250px;
-    height: auto;
-    border-radius: 5px;
+main .weather img {
+    padding: 10px;
+}
+
+main .weather figcaption {
+    color: var(--color);
+    font-family: var(--font-text);
+    font-style: italic;
+    font-size: medium;
+    padding: 5px;
+}
+
+main .weather span {
+    padding: 5px;
+}
+
+main .spotlight .cards{
+    background-color: var(--primary-color);
 }
 
 /* ------ Cards section ------*/

@@ -70,8 +70,43 @@
     }
 
     main .hero-img img {
-    width: 100%;
-    height: 100vh;
+        width: 100%;
+        height: auto;
     }
 
+    main .call-action {
+        width: 100%;
+    }
+
+    main .events {
+        display: grid;
+        gap: 5px;
+       
+    }
+
+    main .events img {
+        width: 355px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    main .events .new {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main .weather {
+        width: 70%;
+
+    }
+
+    main .weather div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main .weather .forecast {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
