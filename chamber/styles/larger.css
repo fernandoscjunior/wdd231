@@ -1,4 +1,4 @@
-@media only screen and (min-width: 49rem) {
+@media only screen and (min-width: 51rem) {
     /*adjusting header body and footer to big-size screen*/
     header, main, nav, footer {
         margin: 0 auto;
@@ -66,8 +66,12 @@
     /*Making main section grid when big screen*/
     main .sections{
         display: grid;
-        grid-template-columns: 2fr 1fr;
         padding: 5px;
+    }
+
+    main .hero-img img {
+    width: 100%;
+    height: 100vh;
     }
 
 }

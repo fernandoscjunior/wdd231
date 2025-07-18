@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory page for the chamber commerce webpage on WDD231">
+    <meta name="description" content="Home page for the chamber commerce webpage on WDD231">
     <meta name="author" content="Fernando S. Costa Jr">
-    <meta property="og:title" content="Chamber Commerce Directory Page">
-    <meta property="og:description" content="Directory page for the Chamber Commerce webpage for WDD231">
-    <meta property="og:url" content="https://fernandoscjunior.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="Chamber Commerce Home Page">
+    <meta property="og:description" content="Home page for the Chamber Commerce webpage for WDD231">
+    <meta property="og:url" content="https://fernandoscjunior.github.io/wdd231/chamber/index.html">
     <meta property="og:image" content="https://fernandoscjunior.github.io/wdd231/chamber/favicon.ico" />
-    <title>Directory</title>
+    <title>Floripa Chamber Home Page</title>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script defer src="scripts/getdate.js"></script>
     <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/business.js"></script>
-    <script defer src="scripts/gridlist.js"></script>
 </head>
 <body>
     <header>
@@ -41,21 +39,29 @@
             <li><a href="join.html" data-page="join">Join Us</a></li>
         </ul>
     </nav>
-
     <main>
-        <h1>Our Partners</h1>
-        <p>Local business and organizations</p>
-       
-        <div class="menu">
-		    <button id="grid" aria-label="Show content in grid format">Grid</button>
-		    <button id="list" aria-label="Show content in list format">List</button>
-	    </div>
-
-        <div id="cards" class="cards">
-
+        <div class="hero-img">
+            <img src="images/fishing.jpg" alt="a man fishing in a boat">
         </div>
-    </main>
+        <div class="call-action">
+            <h1>Are you ready to be part of Floripa's elite business?</h1>
+            <button>Join us now!</button>
+        </div>
+        <h1>Events Today</h1>
+        <section class="events">
+            <div class="new">
+                <h1>Tainha fever</h1>
+                <p>It is finally here, Tainha is here!</p>
+                <img src="images/fish.jpg" alt="fish named Tainha">
+            </div>
+        </section>
+        <section class="weather">
 
+        </section>
+        <section class="spotlights">
+
+        </section>
+    </main>
     <footer>
         <p><strong>Chamber of Floripa</strong><br>Avenida Floriano Peixoto 110, Florianópolis, SC, Brazil<br>info@chamberfloripa.org<br>(48)3256-6532</p>
         <div class="social">

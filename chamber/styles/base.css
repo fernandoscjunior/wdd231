@@ -1,9 +1,9 @@
 :root {
     --primary-color: #FFFFFF;
-    --secondary-color: #95a2a8;
-    --background-color: #006064;
-    --text-color: #A8D5BA;
-    --color: #f0897f;
+    --secondary-color: #caf9dd;
+    --background-color: #015558;
+    --text-color: #aee2c3;
+    --color: #d76459;
     --font-title: "Montserrat", sans-serif;
     --font-text: "DM Sans", sans-serif;
 }
@@ -86,6 +86,11 @@ header h1 {
     border-radius: 5px;
 }
 
+.navigation a.active {
+  border-bottom: 3px solid var(--background-color);
+  font-weight: bold;
+}
+
 /* ------ Main Section Content ------*/
 
 main {
@@ -107,7 +112,7 @@ main p {
 main button {
     font-size: medium;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     background-color: var(--background-color);
     color: var(--primary-color);
     border: none;
@@ -117,6 +122,48 @@ main button {
 
 main button:hover {
     background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+main .call-action {
+    text-align: center;
+    background-color: var(--color);
+    padding: 10px;
+}
+
+main .call-action h1 {
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+main .call-action button {
+    padding: 10px;
+    font-size: 30px;
+    font-family: var(--font-title);
+    font-weight: 800;
+}
+
+main .hero-img img {
+    width: 100%;
+    height: auto;
+}
+
+main .events {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+main .events img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
 }
 
 /* ------ Cards section ------*/
