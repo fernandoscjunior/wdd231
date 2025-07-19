@@ -34,7 +34,7 @@
         
 
 		&:nth-child(even) {
-			background-color: var(--secondary-color);
+			background-color: var(--text-color);
 		}
 
         &:first-child {
