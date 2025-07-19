@@ -81,7 +81,7 @@
     main .events {
         display: grid;
         gap: 5px;
-       
+       width: 100%;
     }
 
     main .events img {
@@ -96,7 +96,7 @@
     }
 
     main .weather {
-        width: 70%;
+        width: 100%;
 
     }
 
@@ -109,4 +109,6 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+    
 }
