@@ -1,14 +1,38 @@
 :root {
     --primary-color: white;
-    --secondary-color: #ddd;
-    --border-color: #eee;
-    --text-color: gray;
+    --secondary-color: #383838;
+    --border-color: #d9d9d9;
+    --text-color: rgb(158, 158, 158);
     --font: "Roboto", sans-serif;
 }
 
 * {
     font-family: var(--font);
     box-sizing: border-box;
+}
+
+/*Dialog */
+
+dialog {
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 650px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.804);
+}
+
+dialog button {
+    color: var(--text-color);
+    background-color: var(--border-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 /* Header */
@@ -77,7 +101,7 @@ header span {
     margin: 5px;
     text-decoration: none;
     color: var(--text-color);
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--secondary-color);
 
 }
 

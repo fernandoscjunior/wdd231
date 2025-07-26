@@ -85,7 +85,9 @@ function createCards(filteredCourses) {
     cleanScreen();
     let finalCredit = 0;
     const container = document.getElementById("card-container");
+
     filteredCourses.forEach(item => {
+        
         const card = document.createElement("div");
         card.className = "card";
         const title = document.createElement("h4");
@@ -98,10 +100,14 @@ function createCards(filteredCourses) {
         }
         finalCredit += item.credits;
 
+        //event to check click to open modal
+        card.addEventListener('click', () => {
+            displayCourseDetails(item);
+        });
+
         card.appendChild(title);
         container.appendChild(card);
         creditsText.innerHTML = "Course Credits: " + finalCredit;
-        
     });
 }
 
@@ -128,4 +134,26 @@ wdd.addEventListener("click", () => {
 function cleanScreen() {
     const main = document.getElementById('card-container'); 
     main.innerHTML = '';
+}
+
+//Adding modal/dialog to courses
+
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(item) {
+    courseDetails.innerHTML = null;
+    courseDetails.innerHTML = `
+    <h2>${item.subject} ${item.number}</h2>
+    <h3>${item.title}</h3>
+    <p><strong>Credits</strong>: ${item.credits}</p>
+    <p><strong>Certificate</strong>: ${item.certificate}</p>
+    <p>${item.description}</p>
+    <p><strong>Technologies</strong>: ${item.technology.join(', ')}</p>
+    <button id="closeModal">❌</button>
+    `;
+    courseDetails.showModal();
+  
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }

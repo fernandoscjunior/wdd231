@@ -10,3 +10,5 @@ navButton.addEventListener('click', () => {
 //getting navigation menu
 const navBar = document.querySelector('#nav-bar');
 
+//making modal
+const modal = document.querySelector('#course-details');
