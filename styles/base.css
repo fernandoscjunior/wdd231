@@ -11,8 +11,22 @@
     box-sizing: border-box;
 }
 
-/*Dialog */
+/* Keyframes */
+@keyframes popUp {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
 
+/*Dialog */
 dialog {
     color: var(--primary-color);
     background-color: var(--text-color);
@@ -20,6 +34,7 @@ dialog {
     border-radius: 10px;
     text-align: center;
     width: 650px;
+    animation: popUp 0.5s ease-out forwards;
 }
 
 ::backdrop {
