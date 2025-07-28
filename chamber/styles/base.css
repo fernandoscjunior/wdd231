@@ -1,9 +1,9 @@
 :root {
     --primary-color:#F5F5F5 ;
-    --secondary-color:#007C7C;
+    --secondary-color:#035454;
     --background-color:#333333;
     --text-color: #003366;
-    --color: #FFB400;
+    --color: #fff700;
     --font-title: "Montserrat", sans-serif;
     --font-text: "DM Sans", sans-serif;
 }
@@ -230,6 +230,20 @@ main .weather span {
 
 main .spotlight .cards{
     background-color: white;
+}
+
+main .thanks .thanks-div {
+    padding: 15px;
+}
+
+main .thanks .thanks-div h2, h3 {
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+main .thanks .thanks-div p {
+    color: var(--primary-color);
+    padding: 5px;
 }
 
 /* ------ Cards section ------*/

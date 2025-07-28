@@ -1,13 +1,3 @@
-:root {
-    --primary-color:#ffffff ;
-    --secondary-color:#007C7C;
-    --background-color:#000000;
-    --text-color: #0f4071;
-    --color: #FFB400;
-    --font-title: "Montserrat", sans-serif;
-    --font-text: "DM Sans", sans-serif;
-}
-
 * {
     margin: 0px;
     padding: 0px;
