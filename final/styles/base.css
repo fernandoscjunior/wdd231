@@ -1,0 +1,197 @@
+:root {
+/* --- Color Pallete --- */
+    --primary-color : #97c48f;
+    --secondary-color : #4c6c50;
+    --background-color : #FFFFFF;
+    --text-color: #354f34;
+    --extra-color : #b7d9ba;
+
+/* --- Typography ---*/
+    ---title-text : "Nunito", sans-serif;
+    --button-text : "Quicksand", sans-serif;
+    --small-text : "Poppins", sans-serif;
+}
+
+* {
+    font-family: var(--small-text);
+    box-sizing: border-box;
+}
+
+/*background-image: url('../images/nature.webp');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+
+/* ----- Keyframes ------*/
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* ----- Header Content -----*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    align-items: center;
+    border-bottom: solid 2px var(--primary-color);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header span {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-family: var(--small-text);
+}
+
+/* ----- Hamburger -----*/
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--button-text);
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* ----- Nav Content -----*/
+
+.navigation {
+    display: none;
+    background-color: var(--primary-color);
+    padding: 5px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--background-color);
+    font-family: var(--small-text);
+    margin-right: 25px;
+
+}
+
+.navigation a:hover{
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+}
+
+.navigation a.active {
+  border-bottom: 3px solid var(--extra-color);
+  font-weight: bold;
+}
+
+/* ----- Main ----- */
+
+main {
+    text-align: center;
+   
+}
+
+main h1 {
+    color: var(--text-color);
+    font-family: var(---title-text);
+}
+
+main .purpose {
+    text-align: center;
+}
+
+main .purpose p {
+    color: var(--text-color);
+}
+
+main .purpose div p {
+    animation: fade 2s;
+}
+
+main .call-action {
+    background-color: var(--secondary-color);
+}
+
+main .call-action h2, p {
+    color: var(--background-color);
+    padding: 10px;
+}
+
+main .call-action button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-family: var(--button-text);
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+}
+
+main .call-action button:hover {
+    background-color: var(--extra-color);
+    color: var(--text-color);
+
+}
+
+main section .cards p {
+    color: var(--text-color);
+}
+
+/* ----- Footer ------*/
+
+footer {
+   background-color: var(--text-color);
+   padding: 10px;
+   text-align: center;
+}
+
+footer p {
+    color: var(--background-color);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 22px;
+    height: auto;
+}
+
+.social a:hover {
+    background-color: var(--extra-color);
+    border-radius: 10%;
+}

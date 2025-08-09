@@ -1,0 +1,26 @@
+@media only screen and (min-width: 51rem) {
+    /*adjusting header body and footer to big-size screen*/
+    header, main {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 1fr 1.6fr;
+        text-align: start;
+        border: none;
+    }
+
+    header span {
+        font-size: 44px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    main .call-action {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+}

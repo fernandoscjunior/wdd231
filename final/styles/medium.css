@@ -1,0 +1,33 @@
+@media only screen and (min-width: 641px) {
+    /*adjusting header body and footer to big-size screen*/
+    header, main {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 1fr 1.3fr;
+        text-align: start;
+        border: none;
+    }
+
+    header span {
+        font-size: 33px;
+    }
+    /*making hamburger small-display only*/
+    .hamburger {
+        display: none;
+    }
+
+    /* Making nav bar default on large screen*/
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    main .call-action {
+        border-radius: 10px;
+    }
+}
