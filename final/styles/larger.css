@@ -33,7 +33,7 @@
     
     main section .cards h2 {
         color: var(--text-color);
-        font-family: var(---title-text);
+        font-family: var(--title-text);
         padding: 10px;
         font-size: 33px;
     }

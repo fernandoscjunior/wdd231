@@ -22,3 +22,9 @@ document.querySelectorAll('dialog').forEach(dialog => {
     if (e.key === 'Escape') dialog.close();
 });
 });
+
+
+//Giving functionallity to continue button on modal
+document.getElementById('continue-button').addEventListener('click', () => {
+    window.location.href = "attribuitions.html";
+})
