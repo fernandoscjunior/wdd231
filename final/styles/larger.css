@@ -5,7 +5,7 @@
         margin: 0 auto;
     }
     header {
-        grid-template-columns: 1fr 1.5fr 0.5fr;
+        grid-template-columns: 1fr 1.8fr 0.5fr;
         text-align: start;
         border: none;
     }

@@ -24,11 +24,6 @@ body.dark main h1{
     color: var(--background-color);
 }
 
-body.dark main button {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
 body.dark main button:hover {
     background-color: var(--secondary-color);
     color: var(--background-color);

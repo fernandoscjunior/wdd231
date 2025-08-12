@@ -23,13 +23,16 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/button.js"></script>
+    <script defer src="scripts/dialog.js"></script>
     <script defer src="scripts/switch-themes.js" type="module"></script>
 </head>
 <body>
     <header>
         <img src="images/oasis-logo.webp" alt="Digital Oasis logo" loading="lazy">
         <span>Digital Oasis</span>
-        <button id="toggle-theme" class="toggle-theme"><img id="theme-button" src="images/light-mode.svg" alt="light mode"></button>
+        <button id="toggle-theme" class="toggle-theme">
+            <img id="theme-button" src="images/light-mode.svg" alt="mode swith button">
+        </button>
         <button id="ham-btn" class="hamburger" title="hamburger menu"></button>
     </header>
 
@@ -64,7 +67,13 @@
             <a href=https://github.com/fernandoscjunior target="_blank"><img src="images/github.svg" alt="github logo" width="16" height="16" loading="lazy"></a>
         </div>
         <p>© Fernando S. Costa Jr 2025</p>
-        <a href="attribuitions.html">Attribuitions</a>
+        <a href="#" data-dialog="redirection" >Attribuitions</a>
+        <a href="">  |  Video for graders</a>
+        <dialog id="redirection">
+            <p>Do you want to go to the Attribuitions Page?</p>
+            <button class="close-button" onclick="document.getElementById('redirection').close()">Go back</button>
+            <button class="continue-button"><a href="attribuitions.html">Continue</a></button>
+        </dialog>
     </footer>
 </body>
 </html>

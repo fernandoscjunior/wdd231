@@ -81,7 +81,7 @@ header .toggle-theme img {
 .navigation {
     display: none;
     background-color: var(--secondary-color);
-    padding: 5px;
+    padding: 3px;
 }
 
 .navigation.show {
@@ -93,6 +93,7 @@ header .toggle-theme img {
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 .navigation a {
@@ -100,18 +101,16 @@ header .toggle-theme img {
     text-decoration: none;
     color: var(--background-color);
     font-family: var(--small-text);
-    margin-right: 25px;
-    padding: 10px;
 
 }
 
 .navigation a:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--extra-color);
     border-radius: 3px;
 }
 
 .navigation a.active {
-  border-bottom: 3px solid var(--extra-color);
+  border-bottom: 3px solid var(--background-color);
   font-weight: bold;
 }
 
@@ -128,7 +127,7 @@ main h1 {
 
 main button {
     cursor: pointer;
-    background-color: var(--text-color);
+    background-color: var(--secondary-color);
     color: var(--background-color);
     border: none;
     border-radius: 10px;
@@ -306,4 +305,39 @@ footer p, a {
 .social a:hover {
     background-color: var(--extra-color);
     border-radius: 10%;
+}
+
+/* ----- Modal -----*/
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 700px;
+    animation: popUp 0.5s ease-out forwards;
+}
+
+dialog p {
+    font-family: var(--font-text);
+    font-size: larger;
+    color: var(--text-color);
+}
+
+dialog::backdrop {
+    background-color: rgba(24, 24, 24, 0.708);
+}
+
+dialog button {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+dialog button:hover {
+    background-color: var(--extra-color);
 }
