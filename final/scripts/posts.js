@@ -6,8 +6,12 @@ const cards = document.querySelector('#cards');
 async function getPosts() {
     try {
         const response = await fetch(posts);
-        const data = await response.json();
-        displayPosts(data.posts);
+        if (response.ok) {
+            const data = await response.json();
+            displayPosts(data.posts);
+        } else {
+            throw Error(await response.text());
+        }
     } catch (error) {
         console.log(error);
     }
