@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for the Digital Oasis website">
+    <meta name="description" content="Subscription page for the Digital Oasis newsletter">
     <meta name="author" content="Fernando S. Costa Jr">
-    <meta property="og:title" content="Digital Oasis Home Page">
-    <meta property="og:description" content="A website made to help you make your digital life green/eco-friendly">
-    <meta property="og:url" content="https://fernandoscjunior.github.io/wdd231/final/index.html">
+    <meta property="og:title" content="Digital Oasis Newsletter subscription">
+    <meta property="og:description" content="This is the subscription page for the Digital Oasis newsletter">
+    <meta property="og:url" content="https://fernandoscjunior.github.io/wdd231/final/newsletter.html">
     <meta property="og:image" content="https://fernandoscjunior.github.io/wdd231/final/images/oasis-logo.png" />
-    <title>Digital Oasis - Home Page</title>
+    <title>Digital Oasis - Newsletter Subscription</title>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/button.js"></script>
+    <script defer src="scripts/timestamp.js"></script>
     <script defer src="scripts/switch-themes.js" type="module"></script>
 </head>
 <body>
@@ -40,24 +40,37 @@
             <li><a href="newsletter.html" data-page="newsletter">Newsletter</a></li>
         </ul>
     </nav>
-
     <main>
-        <h1>Our purpose</h1>
-
-        <section class="purpose">
-            <p>“The environment is where we all meet; where all have a mutual interest; it is the one thing all of us share.” — Lady Bird Johnson</h2>
-            <div>
-                <p>Digital Oasis is a place to learn about ecology and digital life. We believe that your digital life can directly impact the environment, so to help you to have environment-friendly habits we share posts, resources and a newsletter to inform you and give you practic advices.</p>
-            </div>
+        <h1>Be part of our group</h1>
+        <section class="invitation">
+            <p>
+                Sign up to our newsletter to receive weekly news, tips and tricks on how to have a more environment-friendly digital life!
+            </p>
         </section>
 
-        <div class="call-action">
-            <h2>Want to learn more?</h2>
-            <button id="navigateButton"><h3>Join our Newsletter</h3></button>
-            <p>Receive weekly news and tips to have a more eco-friendly digital life.</p>
-        </div>
+        <section>
+            <form method="get" action="subscribed.html">
+                <div>
+                    <label for="fullname">Your full name:</label>
+                    <input type="text" id="fullname" name="fullname" title="Applicants fullname" required>
+                </div>
+                
+                <div>
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" title="Applicants email" placeholder="example@email.com" required>
+                </div>
+
+                <input type="hidden" id="timestamp" name="timestamp"/>
+
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <!-- 
+            Modal Dialogs:
+            Implement at least one modal dialog structure for user interaction (e.g., displaying detailed information, confirming actions).
+            Ensure the modal is accessible and follows best practices for user experience. 
+        -->
     </main>
-    
     <footer>
         <div class="social">
             <a href="https://www.linkedin.com/in/fernando-costa-jr-3a263a33a/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16" loading="lazy"></a>

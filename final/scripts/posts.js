@@ -2,11 +2,15 @@ const posts = "data/posts.json";
 
 const cards = document.querySelector('#cards');
 
-//consuming json asynchronously
+//Consuming my json asynchronously
 async function getPosts() {
-    const response = await fetch(posts);
-    const data = await response.json();
-    displayPosts(data.posts);
+    try {
+        const response = await fetch(posts);
+        const data = await response.json();
+        displayPosts(data.posts);
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 const displayPosts = (posts) => {

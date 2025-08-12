@@ -4,7 +4,6 @@ import {places} from '../data/places.mjs';
 
 const cards = document.querySelector('#cards');
 
-
 const displayPlaces = (places) => {
     places.forEach((place) => {
         let card = document.createElement('section');

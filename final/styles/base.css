@@ -1,10 +1,10 @@
 :root {
 /* --- Color Pallete --- */
-    --primary-color : #97c48f;
-    --secondary-color : #4c6c50;
-    --background-color : #FFFFFF;
-    --text-color: #354f34;
-    --extra-color : #b7d9ba;
+    --primary-color : #ebf9ec;
+    --secondary-color : #375c39;
+    --background-color : #fbfffc;
+    --text-color: #284027;
+    --extra-color : #638665;
 
 /* --- Typography ---*/
     ---title-text : "Nunito", sans-serif;
@@ -16,10 +16,6 @@
     font-family: var(--small-text);
     box-sizing: border-box;
 }
-
-/*background-image: url('../images/nature.webp');
-    background-size: cover;
-    background-repeat: no-repeat;*/
 
 /* ----- Keyframes ------*/
 @keyframes fade {
@@ -35,20 +31,30 @@
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.8fr;
+    grid-template-columns: 1fr 1.5fr 0.5fr 1fr;
     align-items: center;
     border-bottom: solid 2px var(--primary-color);
 }
 
 header img {
-    width: 100px;
-    height: auto;
+    width: 85px;
+    height: 85px;
 }
 
 header span {
     font-size: 1.1rem;
     color: var(--text-color);
     font-family: var(--small-text);
+}
+
+header .toggle-theme {
+    background: none;
+    border: none;
+}
+
+header .toggle-theme img {
+    width: 33px;
+    height: 33px;
 }
 
 /* ----- Hamburger -----*/
@@ -74,7 +80,7 @@ header span {
 
 .navigation {
     display: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 5px;
 }
 
@@ -95,6 +101,7 @@ header span {
     color: var(--background-color);
     font-family: var(--small-text);
     margin-right: 25px;
+    padding: 10px;
 
 }
 
@@ -112,7 +119,6 @@ header span {
 
 main {
     text-align: center;
-   
 }
 
 main h1 {
@@ -120,11 +126,36 @@ main h1 {
     font-family: var(---title-text);
 }
 
+main button {
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+main button:hover {
+    background-color: var(--extra-color);
+    color: var(--text-color);
+}
+
 main .purpose {
     text-align: center;
 }
 
+main .invitation{
+    text-align: center;
+}
+
 main .purpose p {
+    color: var(--text-color);
+}
+
+main .invitation p {
     color: var(--text-color);
 }
 
@@ -136,18 +167,26 @@ main .call-action {
     background-color: var(--secondary-color);
 }
 
-main .call-action h2, p {
+main .call-action h2, p{
     color: var(--background-color);
     padding: 10px;
+    text-decoration: none;
 }
 
 main .call-action button {
+    cursor: pointer;
     background-color: var(--text-color);
-    color: var(--background-color);
-    font-family: var(--button-text);
-    font-size: large;
     border: none;
     border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main .call-action h3 {
+    color: var(--background-color);
+    font-family: var(--button-text);
+    font-size: 21px;
 }
 
 main .call-action button:hover {
@@ -156,8 +195,78 @@ main .call-action button:hover {
 
 }
 
+main section .cards section{
+    border-bottom: 2px solid;
+    border-color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+main section .cards h2 {
+    color: var(--text-color);
+    font-family: var(---title-text);
+    padding: 10px;
+}
+
 main section .cards p {
     color: var(--text-color);
+    font-family: var(--small-text);
+    font-size: medium;
+}
+
+main section .cards img {
+    width: 125px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Form */
+
+form {
+    background: var(--text-color);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--background-color);
+    font-family: var(--small-text);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--extra-color);
+}
+
+main #form-data {
+    text-align: left;
 }
 
 /* ----- Footer ------*/
@@ -166,10 +275,13 @@ footer {
    background-color: var(--text-color);
    padding: 10px;
    text-align: center;
+   margin-top: 20px;
 }
 
-footer p {
+footer p, a {
     color: var(--background-color);
+    text-decoration: none;
+    font-family: var(--small-text);
 }
 
 .social {
